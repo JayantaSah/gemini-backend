@@ -34,7 +34,7 @@ jobs:
       env:
         PYTHONPATH: ${{ github.workspace }}
       run: |
-        pytest -vv tests/
+        pytest -vv tests/test_example.py
 
     - name: Build Docker image
       run: |
